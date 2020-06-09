@@ -14,7 +14,7 @@ if (!$zbp->CheckPlugin('test')) {
 // 保存配置项，$suc只是个人习惯，大部分时候都用不上
 $act = GetVars('act', 'GET');
 // $suc = GetVars('suc', 'GET');
-if (GetVars('act', 'GET') == 'save') {
+if ($act == 'save') {
   // 安全检查，配合下边的BuildSafeURL()使用
   CheckIsRefererValid();
   // 遍历提交内容并处理
@@ -100,7 +100,8 @@ require $blogpath . 'zb_system/admin/admin_top.php';
           // 允许使用“标签”的内容，在编辑器要替换回标签方便编辑
           // array_flip()	交换数组中的键和值。
           $map = array('{$name}' => $zbp->name, '{$host}' => $zbp->host);
-          $str = strtr($zbp->Config("test")->str, array_flip($map)); // 效果等同于下边两行；
+          $str = strtr($zbp->Config("test")->str, array_flip($map));
+          // 效果等同于下边两行；
           // $str = str_replace($zbp->name, '{$name}', $zbp->Config("test")->str);
           // $str = str_replace($zbp->host, '{$host}', $str);
           ?>
