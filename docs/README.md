@@ -211,3 +211,9 @@ https://bbs.zblogcn.com/thread-100631.html
 
 Resilio Sync - 知乎
 https://www.zhihu.com/topic/20064280/hot
+
+### Markdown
+
+本文档是用MD语法写就，感兴趣也可以试下，VSCode直接有相应插件，或者也可以试下[https://typora.io/](https://typora.io/ "A new way to read & write Markdown")
+
+可以将使用typora将`docs/README.md`导出为html

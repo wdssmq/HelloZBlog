@@ -71,6 +71,8 @@ require $blogpath . 'zb_system/admin/admin_top.php';
   </div>
   <div id="divMain2">
     <?php
+    // 判断本地文件是否存在，否则显示远程链接
+    // 可以将使用typora将`docs/README.md`导出为html格式在本地查看
     if (is_file(test_Path("doc-html"))) {
       $docUrl = test_Path("doc-html", "host");
     } else {
