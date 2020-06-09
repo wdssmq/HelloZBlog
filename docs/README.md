@@ -201,6 +201,9 @@ https://marketplace.visualstudio.com/items?itemName=MS-CEINTL.vscode-language-pa
 RSS - 知乎
 https://www.zhihu.com/topic/19551894/top-answers
 
+使用feeds.pub订阅我的博客
+https://feeds.pub/feed/https%3A%2F%2Ffeed.wdssmq.com
+
 Z-Blog 相关资讯 RSS 订阅-博友杂谈-ZBlogger 技术交流中心
 https://bbs.zblogcn.com/thread-100631.html
 
