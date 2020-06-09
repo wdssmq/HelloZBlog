@@ -70,8 +70,15 @@ require $blogpath . 'zb_system/admin/admin_top.php';
     <?php require_once "about.php"; ?>
   </div>
   <div id="divMain2">
-    <p>教程文档：<a href="<?php echo $bloghost ?>zb_users/plugin/test/docs/test.html" target="_blank" title="教程文档" rel="noopener noreferrer"><?php echo $bloghost ?>zb_users/plugin/test/docs/test.html</a></p>
-    <p>效果查看1：<?php echo test_a($bloghost . "?test", "效果查看1"); ?></p>
+    <?php
+    if (is_file(test_Path("doc-html"))) {
+      $docUrl = test_Path("doc-html", "host");
+    } else {
+      $docUrl = "https://github.com/wdssmq/test-for-zblog/tree/master/docs#readme";
+    }
+    ?>
+    <p>教程文档：<?php echo test_a($docUrl, "教程文档", 0, 1); ?></p>
+    <p>效果查看1：<?php echo test_a($bloghost . "?test", "效果查看1", 0, 1); ?></p>
     <p>效果查看2：<?php echo test_a($bloghost . "zb_users/plugin/test/api.php", "效果查看2"); ?></p>
     <p><?php echo GetGuestAgent() ?></p>
     <p>以下内容请在代码编辑器中查看，并配合教程文档</p>
@@ -149,12 +156,13 @@ require $blogpath . 'zb_system/admin/admin_top.php';
   </div>
 </div>
 <?php
-function test_a($href, $title, $text = "")
+function test_a($href, $title, $text = "", $newWindow = 0)
 {
   if (empty($text)) {
     $text = $href;
   }
-  return "<a href=\"{$href}\" title=\"{$title}\">$href</a>";
+  $target = $newWindow ? "target=\"_blank\"" : "";
+  return "<a {$target} href=\"{$href}\" title=\"{$title}\">$text</a>";
 }
 require $blogpath . 'zb_system/admin/admin_footer.php';
 RunTime();
