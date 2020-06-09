@@ -112,23 +112,27 @@ $articles = GetList($num);
 
 ## 附件下载
 
-我承认这里是人为设置的一个门槛，但是至少我认为它是可应对的。
+目前本演示插件已经发布在Git
 
-点击链接加入群聊【我的咸鱼心】：https://jq.qq.com/?_wv=1027&k=57d1Eii
+wdssmq/test-for-zblog: zblog插件开发演示
+
+https://github.com/wdssmq/test-for-zblog
+
+这里姑且推荐另一种门槛比较高的下载方式
+
+首先请加入QQ群【我的咸鱼心】：https://jq.qq.com/?_wv=1027&k=57d1Eii
 
 你可以在群共享中下载到 Resilio Sync 这个软件。具体怎么用你需要自行学习 →[戳这里](https://www.zhihu.com/topic/20064280/hot "Resilio Sync")
 
-群共享中也有本教程的打包，只是版本可能不是最新。
+然后复制如下Key或链接进去：
 
----
-
-下载需要 Resilio Sync，下载后在文件夹中搜索`test.rar`或`test.zip`。
-
-包含上述示例完整的实现代码，
-
-BMNFE2WCBU5Y3TMRMDU6PFEQYI6IC5IFW
+**BMNFE2WCBU5Y3TMRMDU6PFEQYI6IC5IFW**
 
 https://link.resilio.com/#f=%23%E5%90%84%E7%A7%8D%E4%BB%A3%E7%A0%81&sz=15E7&t=1&s=6VS7PMB6OSMOSWDMK6DFOQVWGYPM4XZH&i=C3F6G6ZVRZDLVWCA5DFIGFQFQSDCXPERR&v=2.6&a=2
+
+在`【√】推荐`文件夹中你可以找到本插件的zba打包，比起git版多了一个本文档的html文件
+
+另外`#唯有脑洞与套路`中会时不时扔一些收费插件，想白嫖的建议重点关注
 
 ## 代码编辑器
 
