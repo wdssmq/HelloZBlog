@@ -63,10 +63,21 @@ function test_Path($file, $t = 'path')
 function InstallPlugin_test()
 {
   global $zbp;
+  // 创建并初始化配置项
   if (!$zbp->HasConfig('test')) {
     $zbp->Config('test')->version = 1;
     $zbp->SaveConfig('test');
   }
+  // 创建自定义模块
+  $mod = new Module();
+  $mod->Type = 'div'; // 可选 ul
+  $mod->Name = "[插件开发演示]自定义模块";
+  $mod->FileName = "testMod"; // 插件id+功能区分，比如热门文章testHot
+  $mod->HtmlID = "{$mod->Type}{$mod->FileName}"; // 作为HTML选择器id，保证页面唯+有意义就行
+  $mod->Source = "test"; // 模块来源一般使用当前主题/插件id
+  $mod->Content = "插件创建模块演示"; // 内容
+  $mod->Save();
+  // 更科学的写法是先判断是否存在同名的模块
 }
 function UninstallPlugin_test()
 {

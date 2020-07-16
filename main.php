@@ -58,7 +58,8 @@ if ($act == 'save') {
   Redirect('./main.php');
   // Redirect('./main.php' . ($suc == null ? '' : '?act=$suc'));
 }
-
+// 现有机制在启用插件时才会执行安装函数，如果插件更新并且有相应修改时并不会执行，一个方案时在管理页
+InstallPlugin_test();
 $blogtitle = 'ZBlog插件开发演示';
 require $blogpath . 'zb_system/admin/admin_header.php';
 require $blogpath . 'zb_system/admin/admin_top.php';
