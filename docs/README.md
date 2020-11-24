@@ -158,9 +158,14 @@ https://marketplace.visualstudio.com/items?itemName=MS-CEINTL.vscode-language-pa
       "path": "../../../zb_system"
     }
   ],
-  "settings": {}
+  "settings": {
+    "intelephense.environment.includePaths": [
+      "../../../zb_system"
+    ]
+  }
 }
 ```
+注：`intelephense.environment.includePaths`的说明见这篇：[【VSCode笔记】PHP跨文件夹函数定义提示_电脑网络_沉冰浮水](https://www.wdssmq.com/post/20200930532.html "【VSCode笔记】PHP跨文件夹函数定义提示_电脑网络_沉冰浮水")
 
 (↓↓进阶用法中可直接生成该文件来方便开发↓↓)
 
