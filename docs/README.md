@@ -108,6 +108,8 @@ if (GetVars('act', 'GET') == 'save') {
 // 使用
 $num =  (int)$zbp->Config('test')->num;
 $articles = GetList($num);
+// 模板内使用
+{$zbp.Config('test').text}
 ```
 
 ## 附件下载
@@ -175,13 +177,15 @@ https://marketplace.visualstudio.com/items?itemName=MS-CEINTL.vscode-language-pa
 
 ![20200405122725](20200405122725.png)
 
-### 推荐插件待补充
+### 推荐插件
+
+[【列表】VSCode插件推荐_电脑网络_沉冰浮水](https://www.wdssmq.com/post/20201120794.html "【列表】VSCode插件推荐_电脑网络_沉冰浮水")
 
 ### 代码片段
 
 ↓↓【使用效果】↓↓
 
-![效果演示](20200406125240.gif)
+![代码片段效果演示](20200406125240.gif)
 
 ----
 

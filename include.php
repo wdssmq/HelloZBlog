@@ -21,7 +21,8 @@ function test_hello()
   if (GetVars("test", "GET") === null) {
     return;
   }
-  $zbp->header .= '<script>alert("hello")</script>';
+  // $zbp->Config('test')->str 的值在InstallPlugin_test()中初始化，并且可以在main.php中编辑
+  $zbp->header .= "<script>alert(\"hello {$zbp->Config('test')->str}\")</script>";
 }
 function test_debug()
 {
@@ -66,6 +67,7 @@ function InstallPlugin_test()
   // 创建并初始化配置项
   if (!$zbp->HasConfig('test')) {
     $zbp->Config('test')->version = 1;
+    $zbp->Config('test')->str = $zbp->name;
     $zbp->SaveConfig('test');
   }
   // 创建自定义模块
@@ -73,7 +75,7 @@ function InstallPlugin_test()
   $mod->Type = 'div'; // 可选 ul
   $mod->Name = "[插件开发演示]自定义模块";
   $mod->FileName = "testMod"; // 插件id+功能区分，比如热门文章testHot
-  $mod->HtmlID = "{$mod->Type}{$mod->FileName}"; // 作为HTML选择器id，保证页面唯+有意义就行
+  $mod->HtmlID = "{$mod->Type}{$mod->FileName}"; // 作为HTML选择器id，保证页面唯一+有意义就行
   $mod->Source = "test"; // 模块来源一般使用当前主题/插件id
   $mod->Content = "插件创建模块演示"; // 内容
   $mod->Save();
