@@ -82,7 +82,8 @@ require $blogpath . 'zb_system/admin/admin_top.php';
     ?>
     <p>教程文档：<?php echo test_a($docUrl, "教程文档", 0, 1); ?></p>
     <p>效果查看1：<?php echo test_a($bloghost . "?test", "效果查看1", 0, 1); ?></p>
-    <p>效果查看2：<?php echo test_a($bloghost . "zb_users/plugin/test/api.php", "效果查看2"); ?></p>
+    <p>效果查看2：<?php echo test_a($bloghost . "?test=display", "效果查看2"); ?></p>
+    <p>效果查看3：<?php echo test_a($bloghost . "zb_users/plugin/test/api.php", "效果查看3"); ?></p>
     <p><?php echo GetGuestAgent() ?></p>
     <p>以下内容请在代码编辑器中查看，并配合教程文档</p>
     <!--
@@ -160,7 +161,7 @@ require $blogpath . 'zb_system/admin/admin_top.php';
   </div>
 </div>
 <?php
-function test_a($href, $title, $text = "", $newWindow = 0)
+function test_a($href, $title, $text = "", $newWindow = 1)
 {
   if (empty($text)) {
     $text = $href;
