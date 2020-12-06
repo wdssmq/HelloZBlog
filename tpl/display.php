@@ -10,7 +10,7 @@
   <p>域名为：{$host}</p>
   <p>当前页面的模板路径是：{$path}</p>
   <p>变量$wev的值是：{$wev}</p>
-  <p>直接使用配置项`$zbp->Config('test')->str`：{$zbp->Config('test')->str}</p>
-  <p>引用另一个模板`template:plugin_test_other`：{template:plugin_test_other}</p>
+  <p>直接使用配置项`$zbp->Config('HelloZBlog')->str`：{$zbp->Config('HelloZBlog')->str}</p>
+  <p>引用另一个模板`template:plugin_HelloZBlog_other`：{template:plugin_HelloZBlog_other}</p>
 </body>
 </html>

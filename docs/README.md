@@ -30,15 +30,15 @@ title: Z-BlogPHP插件开发教程
 所有预定的操作都需要在出发前申请。。
 
 ```php
-// 申请人“test”，具体申请事项见ActivePlugin_test函数
-RegisterPlugin("test","ActivePlugin_test");
+// 申请人“HelloZBlog”，具体申请事项见ActivePlugin_HelloZBlog函数
+RegisterPlugin("HelloZBlog","ActivePlugin_HelloZBlog");
 
-function ActivePlugin_test() {
-  // 在名为Filter_Plugin_Index_Begin的站点停靠，停靠后干啥见test_hello
-  Add_Filter_Plugin('Filter_Plugin_Index_Begin', 'test_hello');
+function ActivePlugin_HelloZBlog() {
+  // 在名为Filter_Plugin_Index_Begin的站点停靠，停靠后干啥见HelloZBlog_hello
+  Add_Filter_Plugin('Filter_Plugin_Index_Begin', 'HelloZBlog_hello');
 }
 
-function test_hello()
+function HelloZBlog_hello()
 {
   // 在第一节车箱放一箱橘子【雾
   global $zbp;
@@ -53,7 +53,7 @@ function test_hello()
 | 站点名                    | 事项列表        |
 | ------------------------- | --------------- |
 | aaa                       | eeee,ttew,aewe  |
-| Filter_Plugin_Index_Begin | test_hello,XXXX |
+| Filter_Plugin_Index_Begin | HelloZBlog_hello,XXXX |
 | nnn                       |                 |
 
 ```php
@@ -74,12 +74,12 @@ require '../../../zb_system/function/c_system_base.php';
 // 初始化
 $zbp->Load();
 // 判断当前所属性插件是否启用
-if (!$zbp->CheckPlugin('test')) {
+if (!$zbp->CheckPlugin('HelloZBlog')) {
   $zbp->ShowError(48);
   die();
 }
 // 根据功能可能需要鉴权，本示例为任何人知道地址就能访问并查看本页的运行结果
-// http://127.0.0.1/zb_users/plugin/test/api.php
+// http://127.0.0.1/zb_users/plugin/HelloZBlog/api.php
 
 // 取最新10篇文章
 $articles = GetList(10);
@@ -102,23 +102,23 @@ $zbp->template->Display();
 // 用于获取用户输入的表单写在main.php里，请下载附件，附件代码侧重点会不一样，也更接近实用
 // 保存，视情况需要对用户输入的内容进行判断和转换，比如这里实际应该确保用户提交的是正整数
 if (GetVars('act', 'GET') == 'save') {
-  $zbp->Config('test')->num = GetVars('num', 'POST');
-  $zbp->SaveConfig('test');
+  $zbp->Config('HelloZBlog')->num = GetVars('num', 'POST');
+  $zbp->SaveConfig('HelloZBlog');
 }
 // 使用
-$num =  (int)$zbp->Config('test')->num;
+$num =  (int)$zbp->Config('HelloZBlog')->num;
 $articles = GetList($num);
 // 模板内使用
-{$zbp.Config('test').text}
+{$zbp.Config('HelloZBlog').text}
 ```
 
 ## 附件下载
 
 目前本演示插件已经发布在Git
 
-wdssmq/test-for-zblog: zblog插件开发演示
+wdssmq/HelloZBlog-for-zblog: zblog插件开发演示
 
-https://github.com/wdssmq/test-for-zblog
+https://github.com/wdssmq/HelloZBlog-for-zblog
 
 这里姑且推荐另一种门槛比较高的下载方式
 
@@ -148,7 +148,7 @@ https://marketplace.visualstudio.com/items?itemName=MS-CEINTL.vscode-language-pa
 
 > 本节重点不是如何创建工作区，而是建议将zb_system文件夹纳入到每个插件的工作区以方便开发
 
-将演示插件正确放置到plugin目录后，在插件文件夹内有一个test.code-workspace文件，内容如下：
+将演示插件正确放置到plugin目录后，在插件文件夹内有一个HelloZBlog.code-workspace文件，内容如下：
 
 ```json
 {

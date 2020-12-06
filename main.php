@@ -7,7 +7,7 @@ if (!$zbp->CheckRights($action)) {
   $zbp->ShowError(6);
   die();
 }
-if (!$zbp->CheckPlugin('test')) {
+if (!$zbp->CheckPlugin('HelloZBlog')) {
   $zbp->ShowError(48);
   die();
 }
@@ -26,29 +26,29 @@ if ($act == 'save') {
       $val = strtr($val, $map); // 效果等同于下边两行；
       // $val = str_replace('{$name}', $zbp->name, $val);
       // $val = str_replace('{$host}', $zbp->host, $val);
-      $zbp->Config('test')->$key = $val;
+      $zbp->Config('HelloZBlog')->$key = $val;
       continue;
     }
     if ($key == "num") {
-      $zbp->Config('test')->$key = (int) $val;
+      $zbp->Config('HelloZBlog')->$key = (int) $val;
       continue;
     }
     if ($key == "arr1") {
       $val = str_replace("，", ",", $val);
       // 转换成数组后直接写入
-      $zbp->Config('test')->$key = explode(",", $val);
+      $zbp->Config('HelloZBlog')->$key = explode(",", $val);
       continue;
     }
     if ($key == "arr2") {
       $val = str_replace("，", ",", $val);
       // 保存为字符串，使用时转换
-      $zbp->Config('test')->$key = $val;
+      $zbp->Config('HelloZBlog')->$key = $val;
       continue;
     }
-    $zbp->Config('test')->$key = trim($val);
+    $zbp->Config('HelloZBlog')->$key = trim($val);
   }
   // 保存
-  $zbp->SaveConfig('test');
+  $zbp->SaveConfig('HelloZBlog');
   // 重建模板，即使功能上不需要习惯性写上也不会损失什么
   $zbp->BuildTemplate();
   // 保存后给出操作成功的提示
@@ -59,7 +59,7 @@ if ($act == 'save') {
   // Redirect('./main.php' . ($suc == null ? '' : '?act=$suc'));
 }
 // 现有机制在启用插件时才会执行安装函数，如果插件更新并且有相应修改时并不会执行，一个方案时在管理页
-InstallPlugin_test();
+InstallPlugin_HelloZBlog();
 $blogtitle = 'ZBlog插件开发演示';
 require $blogpath . 'zb_system/admin/admin_header.php';
 require $blogpath . 'zb_system/admin/admin_top.php';
@@ -74,16 +74,16 @@ require $blogpath . 'zb_system/admin/admin_top.php';
     <?php
     // 判断本地文件是否存在，否则显示远程链接
     // 可以将使用typora将`docs/README.md`导出为html格式在本地查看
-    if (is_file(test_Path("doc-html"))) {
-      $docUrl = test_Path("doc-html", "host");
+    if (is_file(HelloZBlog_Path("doc-html"))) {
+      $docUrl = HelloZBlog_Path("doc-html", "host");
     } else {
-      $docUrl = "https://github.com/wdssmq/test-for-zblog/tree/master/docs#readme";
+      $docUrl = "https://github.com/wdssmq/HelloZBlog/tree/master/docs#readme";
     }
     ?>
-    <p>教程文档：<?php echo test_a($docUrl, "教程文档", 0, 1); ?></p>
-    <p>效果查看1：<?php echo test_a($bloghost . "?test", "效果查看1", 0, 1); ?></p>
-    <p>效果查看2：<?php echo test_a($bloghost . "?test=display", "效果查看2"); ?></p>
-    <p>效果查看3：<?php echo test_a($bloghost . "zb_users/plugin/test/api.php", "效果查看3"); ?></p>
+    <p>教程文档：<?php echo HelloZBlog_a($docUrl, "教程文档", 0, 1); ?></p>
+    <p>效果查看1：<?php echo HelloZBlog_a($bloghost . "?HelloZBlog", "效果查看1", 0, 1); ?></p>
+    <p>效果查看2：<?php echo HelloZBlog_a($bloghost . "?HelloZBlog=display", "效果查看2"); ?></p>
+    <p>效果查看3：<?php echo HelloZBlog_a($bloghost . "zb_users/plugin/HelloZBlog/api.php", "效果查看3"); ?></p>
     <p><?php echo GetGuestAgent() ?></p>
     <p>以下内容请在代码编辑器中查看，并配合教程文档</p>
     <!--
@@ -102,47 +102,47 @@ require $blogpath . 'zb_system/admin/admin_top.php';
           // 允许使用“标签”的内容，在编辑器要替换回标签方便编辑
           // array_flip()	交换数组中的键和值。
           $map = array('{$name}' => $zbp->name, '{$host}' => $zbp->host);
-          $str = strtr($zbp->Config("test")->str, array_flip($map));
+          $str = strtr($zbp->Config("HelloZBlog")->str, array_flip($map));
           // 效果等同于下边两行；
-          // $str = str_replace($zbp->name, '{$name}', $zbp->Config("test")->str);
+          // $str = str_replace($zbp->name, '{$name}', $zbp->Config("HelloZBlog")->str);
           // $str = str_replace($zbp->host, '{$host}', $str);
           ?>
           <td><?php echo zbpform::text("str", $str, "90%"); ?></td>
-          <td>可尝试写入`{$name}`或`{$host}`<br>输出效果：<?php echo $zbp->Config("test")->str; ?></td>
+          <td>可尝试写入`{$name}`或`{$host}`<br>输出效果：<?php echo $zbp->Config("HelloZBlog")->str; ?></td>
         </tr>
         <tr>
           <td>数字</td>
-          <td><?php echo zbpform::text("num", $zbp->Config("test")->num, "90%"); ?></td>
+          <td><?php echo zbpform::text("num", $zbp->Config("HelloZBlog")->num, "90%"); ?></td>
           <td>可以留空或输入非数字查看效果</td>
         </tr>
         <tr>
           <td>开关（布尔）</td>
-          <td><?php echo zbpform::zbradio('isOn', $zbp->Config("test")->isOn); ?></td>
-          <td>选择状态：<?php echo $zbp->Config("test")->isOn ? "开" : "关"; ?></td>
+          <td><?php echo zbpform::zbradio('isOn', $zbp->Config("HelloZBlog")->isOn); ?></td>
+          <td>选择状态：<?php echo $zbp->Config("HelloZBlog")->isOn ? "开" : "关"; ?></td>
         </tr>
         <!-- 数组有两种方案 -->
         <!-- 1、数据库持有数组，使用时直接调用，配置页回显时转为字符串 -->
         <?php
         // 直接存数组需要初始化赋值，否则在转字符串时会报错
-        // 初始化操作一般是写在include.php，InstallPlugin_test()中
-        if (!$zbp->Config("test")->HasKey("arr1")) {
-          $zbp->Config("test")->arr1 = array();
+        // 初始化操作一般是写在include.php，InstallPlugin_HelloZBlog()中
+        if (!$zbp->Config("HelloZBlog")->HasKey("arr1")) {
+          $zbp->Config("HelloZBlog")->arr1 = array();
         }; ?>
         <tr>
           <td>数组1</td>
-          <td><?php echo zbpform::text("arr1", join(",", $zbp->Config("test")->arr1), "90%"); ?></td>
+          <td><?php echo zbpform::text("arr1", join(",", $zbp->Config("HelloZBlog")->arr1), "90%"); ?></td>
           <td>请输入使用逗号分隔的内容[，,]皆可<br>
             <!-- 直接作为数组使用，无需转换 -->
-            <?php var_dump($zbp->Config('test')->arr1); ?>
+            <?php var_dump($zbp->Config('HelloZBlog')->arr1); ?>
           </td>
         </tr>
         <!--  2、数据库持有字符串，使用时需要转换，配置页回显时直接输出 -->
         <tr>
           <td>数组2</td>
-          <td><?php echo zbpform::text("arr2", $zbp->Config("test")->arr2, "90%"); ?></td>
+          <td><?php echo zbpform::text("arr2", $zbp->Config("HelloZBlog")->arr2, "90%"); ?></td>
           <td>请输入使用逗号分隔的内容[，,]皆可<br>
             <!-- 直接输出是字符串，使用时要转换 -->
-            <?php var_dump($zbp->Config('test')->arr2); ?>
+            <?php var_dump($zbp->Config('HelloZBlog')->arr2); ?>
           </td>
         </tr>
         <tr>
@@ -161,7 +161,7 @@ require $blogpath . 'zb_system/admin/admin_top.php';
   </div>
 </div>
 <?php
-function test_a($href, $title, $text = "", $newWindow = 1)
+function HelloZBlog_a($href, $title, $text = "", $newWindow = 1)
 {
   if (empty($text)) {
     $text = $href;
