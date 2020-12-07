@@ -87,7 +87,7 @@ require $blogpath . 'zb_system/admin/admin_top.php';
     // 判断本地文件是否存在，否则显示远程链接
     // 可以将使用typora将`docs/README.md`导出为html格式在本地查看
     if (is_file(HelloZBlog_Path("doc-html"))) {
-      $docUrl = HelloZBlog_Path("doc-html", "host");
+      $docUrl = str_replace("index.html", "", HelloZBlog_Path("doc-html", "host"));
     } else {
       $docUrl = "https://github.com/wdssmq/HelloZBlog/tree/master/docs#readme";
     }
@@ -101,7 +101,7 @@ require $blogpath . 'zb_system/admin/admin_top.php';
     <!--
       按照【参考文档→编辑器→工作区】一节配置，然后使用编辑的【在文件中查找】功能分别搜索 BuildSafeURL 和 zbpform 来查看各自有什么用以及如何用，【看不懂就没办法了
      -->
-     <!-- 代码片段 cfg_form -->
+    <!-- 代码片段 cfg_form -->
     <form action="<?php echo BuildSafeURL("main.php?act=save"); ?>" method="post">
       <table width="100%" class="tableBorder">
         <tr>

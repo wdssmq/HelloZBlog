@@ -70,7 +70,7 @@ function HelloZBlog_Path($file, $t = 'path')
   $result = $zbp->$t . 'zb_users/plugin/HelloZBlog/';
   switch ($file) {
     case 'doc-html':
-      return $result . 'docs/README.html';
+      return $result . 'docs/index.html';
       break;
     case 'tpl-display':
       return $result . 'tpl/display.php';
