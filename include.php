@@ -6,6 +6,7 @@ RegisterPlugin("HelloZBlog", "ActivePlugin_HelloZBlog");
 
 function ActivePlugin_HelloZBlog()
 {
+  // 代码片段 Add_Filter_Plugin
   Add_Filter_Plugin('Filter_Plugin_Index_Begin', 'HelloZBlog_hello');
   // 同一个函数可以供多个接口调用↓↓↓
   // Add_Filter_Plugin('Filter_Plugin_Feed_Begin', 'HelloZBlog_hello');
@@ -62,6 +63,7 @@ function HelloZBlog_SetTPL(&$templates)
  * @param string $t    path|host path用于文件读写等操作，host用于获取网址路径
  * @return void
  */
+// 代码片段 fnpath
 function HelloZBlog_Path($file, $t = 'path')
 {
   global $zbp;
@@ -89,12 +91,19 @@ function HelloZBlog_Path($file, $t = 'path')
 function InstallPlugin_HelloZBlog()
 {
   global $zbp;
+  // 代码片段 init_cfg
   // 创建并初始化配置项
   if (!$zbp->HasConfig('HelloZBlog')) {
     $zbp->Config('HelloZBlog')->version = 1;
-    $zbp->Config('HelloZBlog')->str = $zbp->name . "后台配置字段";
+    $zbp->Config('HelloZBlog')->str = $zbp->name . "丨后台配置字段";
     $zbp->SaveConfig('HelloZBlog');
   }
+  // // 判断版本号追加内容之类的
+  // if ($zbp->Config('HelloZBlog')->version <= 2){
+  //   $zbp->Config('HelloZBlog')->version = 2;
+  //   // 其他项目或操作
+  //   $zbp->SaveConfig('HelloZBlog');
+  // }
   // 创建自定义模块
   $mod = new Module();
   $mod->Type = 'div'; // 可选 ul

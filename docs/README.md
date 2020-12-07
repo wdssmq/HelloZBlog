@@ -189,6 +189,8 @@ https://marketplace.visualstudio.com/items?itemName=MS-CEINTL.vscode-language-pa
 
 ### 代码片段
 
+**带有「代码片段」的注释表明其下的代码可以使用快捷生成**
+
 ↓↓【使用效果】↓↓
 
 ![代码片段效果演示](20200406125240.gif)

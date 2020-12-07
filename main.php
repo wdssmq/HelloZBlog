@@ -11,13 +11,24 @@ if (!$zbp->CheckPlugin('HelloZBlog')) {
   $zbp->ShowError(48);
   die();
 }
+// 代码片段 cfg_save
 // 保存配置项，$suc只是个人习惯，大部分时候都用不上
 $act = GetVars('act', 'GET');
 // $suc = GetVars('suc', 'GET');
 if ($act == 'save') {
   // 安全检查，配合下边的BuildSafeURL()使用
   CheckIsRefererValid();
-  // 遍历提交内容并处理
+
+  // 如果你的配置项都是纯文本并且不需要额外处理的话，可以直接用简化版
+  // // 简化版赋值
+  // foreach ($_POST as $key => $val) {
+  //   $zbp->Config('HelloZBlog')->$key = trim($val);
+  // }
+  // // 保存
+  // $zbp->SaveConfig('HelloZBlog');
+  // // 然后接下边的 $zbp->BuildTemplate();
+
+  // 针对特定的字段需要处理后再传递给config
   foreach ($_POST as $key => $val) {
     if ($key == "str") {
       // 保存前可以按需要替换数据内容
@@ -49,6 +60,7 @@ if ($act == 'save') {
   }
   // 保存
   $zbp->SaveConfig('HelloZBlog');
+
   // 重建模板，即使功能上不需要习惯性写上也不会损失什么
   $zbp->BuildTemplate();
   // 保存后给出操作成功的提示
@@ -58,7 +70,7 @@ if ($act == 'save') {
   Redirect('./main.php');
   // Redirect('./main.php' . ($suc == null ? '' : '?act=$suc'));
 }
-// 现有机制在启用插件时才会执行安装函数，如果插件更新并且有相应修改时并不会执行，一个方案时在管理页
+// 现有机制在启用插件时才会执行安装函数，如果插件更新并且有相应修改时并不会执行，一个方案是在管理页
 InstallPlugin_HelloZBlog();
 $blogtitle = 'ZBlog插件开发演示';
 require $blogpath . 'zb_system/admin/admin_header.php';
@@ -89,6 +101,7 @@ require $blogpath . 'zb_system/admin/admin_top.php';
     <!--
       按照【参考文档→编辑器→工作区】一节配置，然后使用编辑的【在文件中查找】功能分别搜索 BuildSafeURL 和 zbpform 来查看各自有什么用以及如何用，【看不懂就没办法了
      -->
+     <!-- 代码片段 cfg_form -->
     <form action="<?php echo BuildSafeURL("main.php?act=save"); ?>" method="post">
       <table width="100%" class="tableBorder">
         <tr>
