@@ -114,13 +114,19 @@ $articles = GetList($num);
 
 ## 附件下载
 
-目前本演示插件已经发布在Git
+wdssmq/HelloZBlog: zblog插件开发演示
 
-wdssmq/HelloZBlog-for-zblog: zblog插件开发演示
+https://github.com/wdssmq/HelloZBlog
 
-https://github.com/wdssmq/HelloZBlog-for-zblog
+---
 
-这里姑且推荐另一种门槛比较高的下载方式
+zblog插件开发演示 - Z-Blog 应用中心
+
+https://app.zblogcn.com/?id=18072
+
+---
+
+其他资源下载：
 
 首先请加入QQ群【我的咸鱼心】：https://jq.qq.com/?_wv=1027&k=57d1Eii
 
@@ -130,11 +136,7 @@ https://github.com/wdssmq/HelloZBlog-for-zblog
 
 **BMNFE2WCBU5Y3TMRMDU6PFEQYI6IC5IFW**
 
-https://link.resilio.com/#f=%23%E5%90%84%E7%A7%8D%E4%BB%A3%E7%A0%81&sz=15E7&t=1&s=6VS7PMB6OSMOSWDMK6DFOQVWGYPM4XZH&i=C3F6G6ZVRZDLVWCA5DFIGFQFQSDCXPERR&v=2.6&a=2
-
-在`【√】推荐`文件夹中你可以找到本插件的zba打包，比起git版多了一个本文档的html文件
-
-另外`#唯有脑洞与套路`中会时不时扔一些收费插件，想白嫖的建议重点关注
+`#唯有脑洞与套路`中会时不时扔一些收费插件，想白嫖的建议重点关注
 
 ## 代码编辑器
 
@@ -180,6 +182,10 @@ https://marketplace.visualstudio.com/items?itemName=MS-CEINTL.vscode-language-pa
 ### 推荐插件
 
 [【列表】VSCode插件推荐_电脑网络_沉冰浮水](https://www.wdssmq.com/post/20201120794.html "【列表】VSCode插件推荐_电脑网络_沉冰浮水")
+
+### 快捷键
+
+[【VSCode】快捷键备忘_电脑网络_沉冰浮水](https://www.wdssmq.com/post/20130525410.html "【VSCode】快捷键备忘_电脑网络_沉冰浮水")
 
 ### 代码片段
 
