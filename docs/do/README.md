@@ -4,7 +4,7 @@
 
 [应用审核拒绝标准-精简版 [Z-Blog Wiki]](https://wiki.zblogcn.com/doku.php?id=appcenter:auditstandard_simple "应用审核拒绝标准-精简版 [Z-Blog Wiki]")
 
-→[点击这里返回文档](/)←
+→[点击这里返回文档](./)←
 
 ![000](000.png)
 ![001](001.png)
@@ -14,6 +14,6 @@
 ![005](005.png)
 ![006](006.png)
 
-[点击这里返回文档](/)
+[点击这里返回文档](./)
 
 # ↑↑点击上边链接返回↑↑
