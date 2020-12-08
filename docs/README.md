@@ -8,6 +8,9 @@
 >
 > 【开发者】大概算是进阶建议贴-开发者中心-ZBlogger技术交流中心
 > https://bbs.zblogcn.com/thread-101310.html
+>
+> 开发者准入规范讨论贴-论坛事务-ZBlogger技术交流中心
+> https://bbs.zblogcn.com/thread-103787.html
 
 # Z-BlogPHP插件开发教程
 
@@ -212,6 +215,39 @@ https://marketplace.visualstudio.com/items?itemName=MS-CEINTL.vscode-language-pa
 【也可以直接从下边项目中复制】
 
 [https://github.com/wdssmq/snippets/tree/master/vscode/zblogcn](https://github.com/wdssmq/snippets/tree/master/vscode/zblogcn "zblog代码片段")
+
+-----
+
+**要点**
+
+右边缩略词可以输出同一份代码片段：`["log", "v_log", "var_dump", "print"]`
+
+会输出如下内容：
+
+```php
+// 前后的debug是分隔，调试完成后可以整体注释掉或者删除
+// debug
+// ob_clean(); // 偶尔有一些情况需要清空前边输出的内容，取消这一行的注释就行
+echo __FILE__ . "丨" . __LINE__ . ":<br>\n";
+var_dump(''); // 光标默认定位在括号里，并处于选中状态，可以直接键入自己要输出的东西
+echo "<br><br>\n\n";
+// die(); // 按tab键会跳到这一行并选中，可以在需要的时候按快捷键取消注释
+// debug
+
+// 使用示意
+if (1 == 2) {
+
+  // debug
+  // ob_clean();
+  echo __FILE__ . "丨" . __LINE__ . ":<br>\n";
+  var_dump('因为1不等于2所以这里并不会输出，在实际代码中就可以确定问题是出在条件语句或更之前的地方');
+  echo "<br><br>\n\n";
+  // die();
+  // debug
+
+  // 预期要执行的东西
+}
+```
 
 ## 其他
 

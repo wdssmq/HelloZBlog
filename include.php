@@ -40,7 +40,22 @@ function HelloZBlog_debug()
   if (GetVars("debug", "GET") === null) {
     return;
   }
+
   // 这里可以用来测试某些东西
+
+  if (1 == 2) {
+
+    // 代码片段 ["log", "v_log", "var_dump", "print"]
+    // 详细说明见：https://github.com/wdssmq/HelloZBlog/tree/master/docs#%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5
+    // debug
+    // ob_clean();
+    echo __FILE__ . "丨" . __LINE__ . ":<br>\n";
+    var_dump('因为1不等于2所以这里并不会输出，在实际代码中就可以确定问题是出在条件语句或更之前的地方');
+    echo "<br><br>\n\n";
+    // die();
+    // debug
+
+  }
 }
 // 重建模板的接口函数
 function HelloZBlog_SetTPL(&$templates)
