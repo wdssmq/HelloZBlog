@@ -31,6 +31,8 @@ function HelloZBlog_hello()
     $zbp->template->Display();
     die();
   }
+  // 代码片段 zbp-header
+  // 代码片段 zbp-footer
   // $zbp->Config('HelloZBlog')->str 的值在InstallPlugin_HelloZBlog()中初始化，并且可以在main.php中编辑
   $zbp->header .= "<script>alert(\"hello {$zbp->Config('HelloZBlog')->str}\")</script>";
 }
@@ -69,6 +71,7 @@ function HelloZBlog_SetTPL(&$templates)
   $templates['header'] = str_replace('{$header}', '{$header}' . "<!--要添加的内容-->", $templates['header']);;
   $templates['footer'] = str_replace('{$footer}', '{$footer}' . "<script>console.log(\"hello {$zbp->Config('HelloZBlog')->str}\")</script><!--By Plugin HelloZBlog-->\n", $templates['footer']);
   // 适用于明确可以不经判断直接引入的内容,比如由插件提供的回到顶部等，理论上更省资源，因为线上环境的模板重建是有间隔的
+  // 当然有些主题省掉了这两个标签就很纠心了，，但是我更选择去怼相应的作者加上。。
 }
 /**
  * 一个获取插件内文件路径的方法
