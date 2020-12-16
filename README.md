@@ -12,4 +12,4 @@ zblog插件开发演示
 
 安装VSCode，之后双击插件内的`HelloZBlog.code-workspace`；
 
-配合[**教程文档**](https://github.com/wdssmq/HelloZBlog/tree/master/docs#readme "教程文档")，开始折腾吧。。
+配合[**教程文档**](docs#readme "教程文档")，开始折腾吧。。
