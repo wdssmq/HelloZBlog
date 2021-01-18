@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <plugin version="php">
 <id>HelloZBlog</id>
-<name>zblog插件开发演示</name>
+<name>HelloZBlog - zblog插件开发演示</name>
 <url>//jq.qq.com/?_wv=1027&amp;k=555hND5</url>
 <note>这里有本武林秘籍……</note>
 <description>置百丈玄冰而崩裂，掷须臾池水而漂摇。</description>
@@ -21,7 +21,7 @@
 <adapted>162145</adapted>
 <version>1.0.4</version>
 <pubdate>2019-05-01</pubdate>
-<modified>2020-12-07</modified>
+<modified>2021-01-18</modified>
 <price>0</price>
 <phpver>5.4</phpver>
 <advanced>

@@ -106,6 +106,7 @@ function HelloZBlog_Path($file, $t = 'path')
       return $result . $file;
   }
 }
+// 插件启用时执行
 function InstallPlugin_HelloZBlog()
 {
   global $zbp;
@@ -133,6 +134,23 @@ function InstallPlugin_HelloZBlog()
   $mod->Save();
   // 更科学的写法是先判断是否存在同名的模块
 }
+// 插件升级时执行
+function UpdatePlugin_HelloZBlog()
+{
+  global $zbp;
+  $version = $zbp->Config('HelloZBlog')->version;
+  if ($version !== 1.1) {
+    $zbp->Config('HelloZBlog')->version = 1.1;
+    $zbp->SaveConfig('HelloZBlog');
+  }
+}
 function UninstallPlugin_HelloZBlog()
 {
+}
+
+
+// 旧版兼容
+function HelloZBlog_Updated()
+{
+  UpdatePlugin_HelloZBlog();
 }

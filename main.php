@@ -70,6 +70,17 @@ if ($act == 'save') {
   Redirect('./main.php');
   // Redirect('./main.php' . ($suc == null ? '' : '?act=$suc'));
 }
+
+if ($act == 'devOn') {
+  // 应用中心开发模式开启
+  $zbp->Config('AppCentre')->enabledevelop = true;
+  $zbp->SaveConfig('AppCentre');
+  // zblog 开发模式
+  $zbp->option['ZC_DEBUG_MODE'] = true;
+  $zbp->SaveOption();
+  $zbp->SetHint("good", "已经启用开发模式");
+  Redirect("./main.php");
+}
 // 现有机制在启用插件时才会执行安装函数，如果插件更新并且有相应修改时并不会执行，一个方案是在管理页
 InstallPlugin_HelloZBlog();
 $blogtitle = 'ZBlog插件开发演示';
@@ -80,6 +91,7 @@ require $blogpath . 'zb_system/admin/admin_top.php';
   <div class="divHeader"><?php echo $blogtitle; ?><small><a title="刷新" href="main.php" style="font-size: 16px;display: inline-block;margin-left: 5px;">刷新</a></small></div>
   <div class="SubMenu">
     <a href="main.php" title="首页"><span class="m-left m-now">首页</span></a>
+    <a href="main.php?act=devOn" title="启用开发模板"><span class="m-right">启用开发模式</span></a>
     <?php require_once "about.php"; ?>
   </div>
   <div id="divMain2">
@@ -96,7 +108,9 @@ require $blogpath . 'zb_system/admin/admin_top.php';
     <p>效果查看1：<?php echo HelloZBlog_a($bloghost . "?HelloZBlog", "效果查看1", 0, 1); ?></p>
     <p>效果查看2：<?php echo HelloZBlog_a($bloghost . "?HelloZBlog=display", "效果查看2"); ?></p>
     <p>效果查看3：<?php echo HelloZBlog_a($bloghost . "zb_users/plugin/HelloZBlog/api.php", "效果查看3"); ?></p>
-    <p><?php echo GetGuestAgent() ?></p>
+    <!-- 输出某些信息 -->
+    <p> - <?php echo GetGuestAgent() ?></p>
+    <p> - zblog调试：<?php echo $zbp->option['ZC_DEBUG_MODE'] ? "on" : "off" ?> 应用中心开发：<?php echo $zbp->Config('AppCentre')->enabledevelop ? "on" : "off" ?></p>
     <p>以下内容请在代码编辑器中查看，并配合教程文档</p>
     <!--
       按照【参考文档→编辑器→工作区】一节配置，然后使用编辑的【在文件中查找】功能分别搜索 BuildSafeURL 和 zbpform 来查看各自有什么用以及如何用，【看不懂就没办法了
