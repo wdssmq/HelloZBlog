@@ -134,21 +134,30 @@ function InstallPlugin_HelloZBlog()
   $mod->Save();
   // 更科学的写法是先判断是否存在同名的模块
 }
+
+// 卸载插件
+function UninstallPlugin_HelloZBlog()
+{
+  global $zbp;
+  $zbp->DelConfig("HelloZBlog");
+}
+
+// 代码片段 fn_update
 // 插件升级时执行
 function UpdatePlugin_HelloZBlog()
 {
   global $zbp;
-  $version = $zbp->Config('HelloZBlog')->version;
-  if ($version !== 1.1) {
-    $zbp->Config('HelloZBlog')->version = 1.1;
+  //$version = $zbp->Config('HelloZBlog')->version;
+  //if ($version !== 1.1) {
+  //  $zbp->Config('HelloZBlog')->version = 1.1;
+  //  $zbp->SaveConfig('HelloZBlog');
+  //}
+  // cfg_haskey ← 单独使用
+  if (!$zbp->Config('HelloZBlog')->HasKey("newKey")) {
+    $zbp->Config('HelloZBlog')->newKey = 'value';
     $zbp->SaveConfig('HelloZBlog');
   }
 }
-function UninstallPlugin_HelloZBlog()
-{
-}
-
-
 // 旧版兼容
 function HelloZBlog_Updated()
 {
