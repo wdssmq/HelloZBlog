@@ -51,11 +51,11 @@ function HelloZBlog_hello()
 
 列车发车后，“车长”手里会有这样一份表格，而前边的 Add_Filter_Plugin()函数就相当于填写这张表；
 
-| 站点名                    | 事项列表        |
-| ------------------------- | --------------- |
-| aaa                       | eeee,ttew,aewe  |
+| 站点名                    | 事项列表              |
+| ------------------------- | --------------------- |
+| aaa                       | eeee,ttew,aewe        |
 | Filter_Plugin_Index_Begin | HelloZBlog_hello,XXXX |
-| nnn                       |                 |
+| nnn                       |                       |
 
 ```php
 // 到达名为Filter_Plugin_Index_Begin的站点后，对应表格按顺序执行相应的事项
@@ -149,7 +149,7 @@ https://marketplace.visualstudio.com/items?itemName=MS-CEINTL.vscode-language-pa
 
 ### 工作区
 
-> 本节重点不是如何创建工作区，而是建议将 zb_system 文件夹纳入到每个插件的工作区以方便开发
+> 本节重点不是如何创建工作区，而是建议将 zb_system 文件夹纳入到每个插件的工作区以方便开发。
 
 将演示插件正确放置到 plugin 目录后，在插件文件夹内有一个 HelloZBlog.code-workspace 文件，内容如下：
 
@@ -170,6 +170,9 @@ https://marketplace.visualstudio.com/items?itemName=MS-CEINTL.vscode-language-pa
   }
 }
 ```
+
+**一个很重要的快捷键：`ctrl + shift + f`**
+
 注：`intelephense.environment.includePaths`的说明见这篇：[【VSCode 笔记】PHP 跨文件夹函数定义提示_电脑网络_沉冰浮水](https://www.wdssmq.com/post/20200930532.html "【VSCode笔记】PHP跨文件夹函数定义提示_电脑网络_沉冰浮水")
 
 (↓↓进阶用法中可直接生成该文件来方便开发↓↓)
