@@ -1,18 +1,18 @@
 ↓↓一些非线性的东西：
 
-> 教程贴索引[电梯]-Z-BlogPHP-ZBlogger技术交流中心
+> 教程贴索引[电梯]-Z-BlogPHP-ZBlogger 技术交流中心
 > https://bbs.zblogcn.com/thread-94927.html
 >
-> 初学者Teaching计划-开发者中心-ZBlogger技术交流中心
+> 初学者 Teaching 计划-开发者中心-ZBlogger 技术交流中心
 > https://bbs.zblogcn.com/thread-102975.html
 >
-> 【开发者】大概算是进阶建议贴-开发者中心-ZBlogger技术交流中心
+> 【开发者】大概算是进阶建议贴-开发者中心-ZBlogger 技术交流中心
 > https://bbs.zblogcn.com/thread-101310.html
 >
-> 开发者准入规范讨论贴-论坛事务-ZBlogger技术交流中心
+> 开发者准入规范讨论贴-论坛事务-ZBlogger 技术交流中心
 > https://bbs.zblogcn.com/thread-103787.html
 
-# Z-BlogPHP插件开发教程
+# Z-BlogPHP 插件开发教程
 
 ## 前言
 
@@ -115,13 +115,13 @@ $articles = GetList($num);
 
 ## 附件下载
 
-wdssmq/HelloZBlog: zblog插件开发演示
+wdssmq/HelloZBlog: zblog 插件开发演示
 
 https://github.com/wdssmq/HelloZBlog
 
 ---
 
-zblog插件开发演示 - Z-Blog 应用中心
+zblog 插件开发演示 - Z-Blog 应用中心
 
 https://app.zblogcn.com/?id=18072
 
@@ -129,11 +129,11 @@ https://app.zblogcn.com/?id=18072
 
 其他资源下载：
 
-首先请加入QQ群【我的咸鱼心】：https://jq.qq.com/?_wv=1027&k=57d1Eii
+首先请加入 QQ 群【我的咸鱼心】：https://jq.qq.com/?_wv=1027&k=57d1Eii
 
 你可以在群共享中下载到 Resilio Sync 这个软件。具体怎么用你需要自行学习 →[戳这里](https://www.zhihu.com/topic/20064280/hot "Resilio Sync")
 
-然后复制如下Key或链接进去：
+然后复制如下 Key 或链接进去：
 
 **BMNFE2WCBU5Y3TMRMDU6PFEQYI6IC5IFW**
 
@@ -149,9 +149,9 @@ https://marketplace.visualstudio.com/items?itemName=MS-CEINTL.vscode-language-pa
 
 ### 工作区
 
-> 本节重点不是如何创建工作区，而是建议将zb_system文件夹纳入到每个插件的工作区以方便开发
+> 本节重点不是如何创建工作区，而是建议将 zb_system 文件夹纳入到每个插件的工作区以方便开发
 
-将演示插件正确放置到plugin目录后，在插件文件夹内有一个HelloZBlog.code-workspace文件，内容如下：
+将演示插件正确放置到 plugin 目录后，在插件文件夹内有一个 HelloZBlog.code-workspace 文件，内容如下：
 
 ```json
 {
@@ -170,19 +170,19 @@ https://marketplace.visualstudio.com/items?itemName=MS-CEINTL.vscode-language-pa
   }
 }
 ```
-注：`intelephense.environment.includePaths`的说明见这篇：[【VSCode笔记】PHP跨文件夹函数定义提示_电脑网络_沉冰浮水](https://www.wdssmq.com/post/20200930532.html "【VSCode笔记】PHP跨文件夹函数定义提示_电脑网络_沉冰浮水")
+注：`intelephense.environment.includePaths`的说明见这篇：[【VSCode 笔记】PHP 跨文件夹函数定义提示_电脑网络_沉冰浮水](https://www.wdssmq.com/post/20200930532.html "【VSCode笔记】PHP跨文件夹函数定义提示_电脑网络_沉冰浮水")
 
 (↓↓进阶用法中可直接生成该文件来方便开发↓↓)
 
 开发者工具 Z-Blog 应用中心 `https://app.zblogcn.com/?id=1254`
 
-默认vscode打开效果如图
+默认 vscode 打开效果如图
 
 ![20200405122725](20200405122725.png)
 
 ### 推荐插件
 
-[【列表】VSCode插件推荐_电脑网络_沉冰浮水](https://www.wdssmq.com/post/20201120794.html "【列表】VSCode插件推荐_电脑网络_沉冰浮水")
+[【列表】VSCode 插件推荐_电脑网络_沉冰浮水](https://www.wdssmq.com/post/20201120794.html "【列表】VSCode插件推荐_电脑网络_沉冰浮水")
 
 ### 快捷键
 
@@ -198,9 +198,9 @@ https://marketplace.visualstudio.com/items?itemName=MS-CEINTL.vscode-language-pa
 
 ----
 
-**添加代码片段到VSCode**
+**添加代码片段到 VSCode**
 
-【查看】→【命令面板】（快捷键ctrl+shift+p）
+【查看】→【命令面板】（快捷键 ctrl+shift+p）
 
 ↓↓【输入`代码片段`】↓↓
 
@@ -256,7 +256,7 @@ if (1 == 2) {
 RSS - 知乎
 https://www.zhihu.com/topic/19551894/top-answers
 
-使用feeds.pub订阅我的博客
+使用 feeds.pub 订阅我的博客
 https://feeds.pub/feed/https%3A%2F%2Ffeed.wdssmq.com
 
 Z-Blog 相关资讯 RSS 订阅-博友杂谈-ZBlogger 技术交流中心
@@ -269,12 +269,12 @@ https://www.zhihu.com/topic/20064280/hot
 
 ### Markdown
 
-本文档是用MD语法写就，感兴趣也可以试下，VSCode直接有相应插件，或者也可以试下[https://typora.io/](https://typora.io/ "A new way to read & write Markdown")
+本文档是用 MD 语法写就，感兴趣也可以试下，VSCode 直接有相应插件，或者也可以试下[https://typora.io/](https://typora.io/ "A new way to read & write Markdown")
 
-可以将使用typora将`docs/README.md`导出为html
+可以将使用 typora 将`docs/README.md`导出为 html
 
-当然有有web环境的情况下下边工具更方便些
+当然有有 web 环境的情况下下边工具更方便些
 
 ### docsify
 
-一个基于Markdown的在线文档工具：[docsify](https://docsify.js.org/#/zh-cn/ "docsify")
+一个基于 Markdown 的在线文档工具：[docsify](https://docsify.js.org/#/zh-cn/ "docsify")
