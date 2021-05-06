@@ -81,7 +81,7 @@ if ($act == 'devOn') {
   $zbp->SetHint("good", "已经启用开发模式");
   Redirect("./main.php");
 }
-// 现有机制在启用插件时才会执行安装函数，如果插件更新并且有相应修改时并不会执行，一个方案是在管理页
+// 开发中会在插件启用后才写初始化功能，在管理员调用保证执行；
 InstallPlugin_HelloZBlog();
 $blogtitle = 'ZBlog插件开发演示';
 require $blogpath . 'zb_system/admin/admin_header.php';
