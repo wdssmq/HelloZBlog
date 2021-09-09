@@ -111,7 +111,7 @@ function HelloZBlog_SetTPL(&$templates)
  *
  * @param string $file 要获取的文件路径或标识别名
  * @param string $t    path|host path用于文件读写等操作，host用于获取网址路径
- * @return void
+ * @return string
  */
 // 代码片段 fnpath
 function HelloZBlog_Path($file, $t = 'path')

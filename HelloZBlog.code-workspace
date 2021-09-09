@@ -4,12 +4,12 @@
       "path": "."
     },
     {
-      "path": "../../../zb_system"
+      "path": "..\\..\\..\\zb_system"
     }
   ],
   "settings": {
     "intelephense.environment.includePaths": [
-      "../../../zb_system"
+      "..\\..\\..\\zb_system"
     ]
   }
 }
