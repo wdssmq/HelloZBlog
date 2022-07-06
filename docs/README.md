@@ -9,14 +9,14 @@
 >
 > 开发者准入规范讨论贴-论坛事务-ZBlogger 技术交流中心
 > https://bbs.zblogcn.com/thread-103787.html
-> 
+>
 > ---------
-> 
+>
 > 为什么当代社会中有很多人认为视频阅读替代文字阅读是一件可怕的事？：
 > [https://www.zhihu.com/question/357332826/answer/1845022977](https://www.zhihu.com/question/357332826/answer/1845022977 "为什么当代社会中有很多人认为视频阅读替代文字阅读是一件可怕的事？ - 知乎")
-> 
+>
 > ---------
-> 
+>
 > Z-BlogPHP 官方文档：
 >[https://docs.zblogcn.com/php/#/](https://docs.zblogcn.com/php/#/ "Z-BlogPHP 官方文档")
 
@@ -205,7 +205,7 @@ https://marketplace.visualstudio.com/items?itemName=MS-CEINTL.vscode-language-pa
 
 默认 vscode 打开效果如图
 
-![20200405122725](20200405122725.png)
+![20200405122725](imgs-more/20200405122725.png)
 
 ### 推荐插件
 
@@ -221,7 +221,7 @@ https://marketplace.visualstudio.com/items?itemName=MS-CEINTL.vscode-language-pa
 
 ↓↓【使用效果】↓↓
 
-![代码片段效果演示](20200406125240.gif)
+![代码片段效果演示](imgs-more/20200406125240.gif)
 
 ----
 
@@ -231,11 +231,11 @@ https://marketplace.visualstudio.com/items?itemName=MS-CEINTL.vscode-language-pa
 
 ↓↓【输入`代码片段`】↓↓
 
-![20200406125233](20200406125233.png)
+![20200406125233](imgs-more/20200406125233.png)
 
 ↓↓【找到`PHP`或者`html`】↓↓
 
-![20200406125239](20200406125239.png)
+![20200406125239](imgs-more/20200406125239.png)
 
 【在打开的文件中编辑添加】
 
