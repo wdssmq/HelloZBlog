@@ -19,3 +19,9 @@ Z-BlogPHP 插件开发演示
 HelloZBlog「插件开发演示」 - Z-Blog 应用中心：
 
 [https://app.zblogcn.com/?id=18072](https://app.zblogcn.com/?id=18072 "HelloZBlog「插件开发演示」 - Z-Blog 应用中心")
+
+## 在线查看
+
+Z-BlogPHP 插件开发教程：
+
+[https://wdssmq.github.io/HelloZBlog/#/](https://wdssmq.github.io/HelloZBlog/#/ "Z-BlogPHP 插件开发教程")
