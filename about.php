@@ -9,8 +9,24 @@
     clear: both;
   }
 
+  .is-text-bold {
+    font-weight: bold;
+  }
+
   #divMain2 {
     margin-bottom: 3rem;
+  }
+
+  #divMain2 p:not(:last-child) {
+    margin-bottom: .3rem;
+  }
+
+  #divMain2 code {
+    background-color: hsl(0deg, 0%, 96%);
+    color: hsl(348deg, 100%, 61%);
+    font-size: 0.875em;
+    font-weight: normal;
+    padding: 0.25em 0.5em 0.25em;
   }
 
   #divMain .SubMenu {
@@ -102,28 +118,28 @@
   <!-- -------- -->
   <p>QQ：349467624 <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=349467624&amp;site=qq&amp;menu=yes" title="沉冰浮水的QQ"><img src="https://www.wdssmq.com/zb_users/logos/qq_button.png" alt="QQ" title="QQ"></a></p>
   <p>博客：<a target="_blank" href="https://www.wdssmq.com" title="沉冰浮水">https://www.wdssmq.com</a></p>
-  <p>Feed：<a target="_blank" href="https://feed.wdssmq.com" title="Feed">https://feed.wdssmq.com</a></p>
+  <p class="is-text-bold">Feed：<a target="_blank" href="https://feed.wdssmq.com" title="Feed">https://feed.wdssmq.com</a></p>
   <p>bilibili：<a target="_blank" href="https://space.bilibili.com/44744006" title="bilibili">https://space.bilibili.com/44744006</a></p>
   <p>知乎：<a target="_blank" href="https://www.zhihu.com/people/wdssmq" title="知乎">https://www.zhihu.com/people/wdssmq</a></p>
   <p>GitHub：<a target="_blank" href="https://github.com/wdssmq" title="GitHub">https://github.com/wdssmq</a></p>
   <p>GreasyFork：<a target="_blank" href="https://greasyfork.org/zh-CN/users/6865-wdssmq" title="GreasyFork">https://greasyfork.org/zh-CN/users/6865-wdssmq</a></p>
   <hr><!-- -------- -->
   <p>爱发电：<a target="_blank" href="https://afdian.net/@wdssmq" title="爱发电">https://afdian.net/@wdssmq</a></p>
-  <p>[AD：<a title="老薛主机" target="_blank" href="https://my.laoxuehost.net/aff.php?aff=294">PHP美国空间</a> 优惠码：15off-xnxf ]</p>
+  <p>[AD：<a title="老薛主机" target="_blank" href="https://my.laoxuehost.net/aff.php?aff=294">PHP 美国空间</a> 优惠码：15off-xnxf ]</p>
   <p>[AD：<a title="主机云" target="_blank" href="https://my.hostyun.com/page.aspx?c=referral&u=8680">vps-主机云</a>]</p>
   <p>[AD：<a title="Vultr" target="_blank" href="https://www.vultr.com/?ref=7663955">vps-Vultr</a>]</p>
   <hr><!-- -------- -->
-  <p>一款基于QueryList V4的Z-Blog采集插件：<a href="https://github.com/wdssmq/kumo-for-zblog" target="_blank" title="wdssmq/kumo-for-zblog: 一款基于QueryList V4的Z-Blog采集插件">https://github.com/wdssmq/kumo-for-zblog</a></p>
+  <p>一款基于 QueryList V4 的 Z-Blog 采集插件：<a href="https://github.com/wdssmq/kumo-for-zblog" target="_blank" title="wdssmq/kumo-for-zblog: 一款基于QueryList V4的Z-Blog采集插件">https://github.com/wdssmq/kumo-for-zblog</a></p>
   <p>某理念崩坏的采集插件 - Z-Blog 应用中心：<a href="https://app.zblogcn.com/?id=17788" target="_blank" title="某理念崩坏的采集插件 - Z-Blog 应用中心">https://app.zblogcn.com/?id=17788</a></p>
   <div style="min-height: 37px;"></div>
 </div>
 <div id="xnxf-contrib" class="in">
   <p>虽然暂时还没有做区免费 Or 收费的判断，假定您是免费获取到的，而这个插件对您有用，请支付合理费用。</p>
-  <p><b>点击上方「关于」可关闭此提示，137天内不再显示。</b></p>
+  <p><b>点击上方「关于」可关闭此提示，137 天内不再显示。</b></p>
   <div id="xnxf-qr-box">
-    <img src="https://cdn.jsdelivr.net/gh/wdssmq/wdssmq@main/doc/qr-qq.png" alt="qr-qq" title="qr-qq" style="max-width:100%;">
-    <img src="https://cdn.jsdelivr.net/gh/wdssmq/wdssmq@main/doc/qr-wx.png" alt="qr-wx" title="qr-wx" style="max-width:100%;">
-    <img src="https://cdn.jsdelivr.net/gh/wdssmq/wdssmq@main/doc/qr-ali.png" alt="qr-ali" title="qr-ali" style="max-width:100%;">
+    <img src="https://fastly.jsdelivr.net/gh/wdssmq/wdssmq@main/doc/qr-qq.png" alt="qr-qq" title="qr-qq" style="max-width:100%;">
+    <img src="https://fastly.jsdelivr.net/gh/wdssmq/wdssmq@main/doc/qr-wx.png" alt="qr-wx" title="qr-wx" style="max-width:100%;">
+    <img src="https://fastly.jsdelivr.net/gh/wdssmq/wdssmq@main/doc/qr-ali.png" alt="qr-ali" title="qr-ali" style="max-width:100%;">
   </div>
   <div style="min-height: 37px;"></div>
 </div>
