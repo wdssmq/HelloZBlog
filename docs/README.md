@@ -1,3 +1,5 @@
+## 相关推荐
+
 > 教程贴索引[电梯]-Z-BlogPHP-ZBlogger 技术交流中心
 > https://bbs.zblogcn.com/thread-94927.html
 >
@@ -19,8 +21,6 @@
 >
 > Z-BlogPHP 官方文档：
 >[https://docs.zblogcn.com/php/#/](https://docs.zblogcn.com/php/#/ "Z-BlogPHP 官方文档")
-
-# Z-BlogPHP 插件开发教程
 
 ## 前言
 
