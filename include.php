@@ -1,5 +1,5 @@
 <?php
-#注册杒件
+# 注册杒件
 RegisterPlugin("HelloZBlog", "ActivePlugin_HelloZBlog");
 
 // echo $xnxf;
@@ -24,7 +24,7 @@ function HelloZBlog_hello()
 {
   global $zbp;
   $HelloZBlog = GetVars("HelloZBlog", "GET");
-  // /?HelloZBlog ←← 这种情况取值为空字符串，并不严格等于null
+  // /?HelloZBlog ←← 这种情况取值为空字符串，并不严格等于 null
   // var_dump($HelloZBlog);
   // 当网址参数中没有 HelloZBlog 时跳过接口执行
   if ($HelloZBlog === null) {
@@ -33,10 +33,10 @@ function HelloZBlog_hello()
 
   // 代码片段 zbp-header
   // 代码片段 zbp-footer
-  // $zbp->Config('HelloZBlog')->str 的值在InstallPlugin_HelloZBlog()中初始化，并且可以在main.php中编辑
+  // $zbp->Config('HelloZBlog')->str 的值在 InstallPlugin_HelloZBlog() 中初始化，并且可以在 main.php中编辑
   $str = $zbp->Config('HelloZBlog')->str;
   $title = $zbp->template->GetTags('title');
-  $zbp->footer .= "<script>alert(\"hello {$str}\\n初始 title ${title}\")</script>";
+  $zbp->footer .= "<script>alert(\"hello {$str}\\n初始 title {$title}\")</script>";
 
   // 理论上只要能访问到 $zbp 并且 $zbp->template->Display() 被调用前，通过下边方法向前台传递或更新「模板变量」
   $zbp->template->SetTags('HelloTag', "2021年9月9日添加此部分");
@@ -159,9 +159,9 @@ function InstallPlugin_HelloZBlog()
   $mod = new Module();
   $mod->Type = 'div'; // 可选 ul
   $mod->Name = "[插件开发演示]自定义模块";
-  $mod->FileName = "HelloZBlogMod"; // 插件id+功能区分，比如热门文章HelloZBlogHot
-  $mod->HtmlID = "{$mod->Type}{$mod->FileName}"; // 作为HTML选择器id，保证页面唯一+有意义就行
-  $mod->Source = "HelloZBlog"; // 模块来源一般使用当前主题/插件id
+  $mod->FileName = "HelloZBlogMod"; // 插件 id + 功能区分，比如热门文章 HelloZBlogHot
+  $mod->HtmlID = "{$mod->Type}{$mod->FileName}"; // 作为 HTML 选择器 id，保证页面唯一 + 有意义就行
+  $mod->Source = "HelloZBlog"; // 模块来源一般使用当前主题/插件 id
   $mod->Content = "插件创建模块演示"; // 内容
   $mod->Save();
   // 更科学的写法是先判断是否存在同名的模块

@@ -83,12 +83,12 @@ if ($act == 'devOn') {
 }
 // 开发中会在插件启用后才写初始化功能，在管理页调用保证执行；
 InstallPlugin_HelloZBlog();
-$blogtitle = 'ZBlog插件开发演示';
+$blogtitle = 'ZBlog 插件开发演示';
 require $blogpath . 'zb_system/admin/admin_header.php';
 require $blogpath . 'zb_system/admin/admin_top.php';
 ?>
 <div id="divMain">
-  <div class="divHeader"><?php echo $blogtitle; ?><small><a title="刷新" href="main.php" style="font-size: 16px;display: inline-block;margin-left: 5px;">刷新</a></small></div>
+  <div class="divHeader"><?php echo $blogtitle; ?></div>
   <div class="SubMenu">
     <a href="main.php" title="首页"><span class="m-left m-now">首页</span></a>
     <a href="main.php?act=devOn" title="启用开发模板"><span class="m-right">启用开发模式</span></a>
@@ -97,7 +97,6 @@ require $blogpath . 'zb_system/admin/admin_top.php';
   <div id="divMain2">
     <?php
     // 判断本地文件是否存在，否则显示远程链接
-    // 可以将使用typora将`docs/README.md`导出为html格式在本地查看
     if (is_file(HelloZBlog_Path("doc-html"))) {
       $docUrl = str_replace("index.html", "", HelloZBlog_Path("doc-html", "host"));
     } else {
@@ -105,12 +104,12 @@ require $blogpath . 'zb_system/admin/admin_top.php';
     }
     ?>
     <p>教程文档：<?php echo HelloZBlog_a($docUrl, "教程文档", 0, 1); ?></p>
-    <p>效果查看1：<?php echo HelloZBlog_a($bloghost . "?HelloZBlog", "效果查看1", 0, 1); ?></p>
-    <p>效果查看2：<?php echo HelloZBlog_a($bloghost . "?HelloZBlog=display", "效果查看2"); ?></p>
-    <p>效果查看3：<?php echo HelloZBlog_a($bloghost . "zb_users/plugin/HelloZBlog/api.php", "效果查看3"); ?></p>
+    <p>效果查看 1：<?php echo HelloZBlog_a($bloghost . "?HelloZBlog", "效果查看1", 0, 1); ?></p>
+    <p>效果查看 2：<?php echo HelloZBlog_a($bloghost . "?HelloZBlog=display", "效果查看2"); ?></p>
+    <p>效果查看 3：<?php echo HelloZBlog_a($bloghost . "zb_users/plugin/HelloZBlog/api.php", "效果查看3"); ?></p>
     <!-- 输出某些信息 -->
     <p> - <?php echo GetGuestAgent() ?></p>
-    <p> - zblog调试：<?php echo $zbp->option['ZC_DEBUG_MODE'] ? "on" : "off" ?> 应用中心开发：<?php echo $zbp->Config('AppCentre')->enabledevelop ? "on" : "off" ?></p>
+    <p> - zblog 调试：<b><?php echo $zbp->option['ZC_DEBUG_MODE'] ? "on" : "off" ?></b> 应用中心开发：<b><?php echo $zbp->Config('AppCentre')->enabledevelop ? "on" : "off" ?></b></p>
     <p>以下内容请在代码编辑器中查看，并配合教程文档</p>
     <!--
       按照【参考文档→编辑器→工作区】一节配置，然后使用编辑的【在文件中查找】功能分别搜索 BuildSafeURL 和 zbpform 来查看各自有什么用以及如何用，【看不懂就没办法了
@@ -151,12 +150,12 @@ require $blogpath . 'zb_system/admin/admin_top.php';
         <!-- 1、数据库持有数组，使用时直接调用，配置页回显时转为字符串 -->
         <?php
         // 直接存数组需要初始化赋值，否则在转字符串时会报错
-        // 初始化操作一般是写在include.php，InstallPlugin_HelloZBlog()中
+        // 初始化操作一般是写在 include.php，InstallPlugin_HelloZBlog() 中
         if (!$zbp->Config("HelloZBlog")->HasKey("arr1")) {
           $zbp->Config("HelloZBlog")->arr1 = array();
         }; ?>
         <tr>
-          <td>数组1</td>
+          <td>数组 1</td>
           <td><?php echo zbpform::text("arr1", join(",", $zbp->Config("HelloZBlog")->arr1), "90%"); ?></td>
           <td>请输入使用逗号分隔的内容[，,]皆可<br>
             <!-- 直接作为数组使用，无需转换 -->
@@ -165,7 +164,7 @@ require $blogpath . 'zb_system/admin/admin_top.php';
         </tr>
         <!--  2、数据库持有字符串，使用时需要转换，配置页回显时直接输出 -->
         <tr>
-          <td>数组2</td>
+          <td>数组 2</td>
           <td><?php echo zbpform::text("arr2", $zbp->Config("HelloZBlog")->arr2, "90%"); ?></td>
           <td>请输入使用逗号分隔的内容[，,]皆可<br>
             <!-- 直接输出是字符串，使用时要转换 -->

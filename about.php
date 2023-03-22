@@ -13,6 +13,10 @@
     font-weight: bold;
   }
 
+  .is-text-red {
+    color: #d60000;
+  }
+
   #divMain2 {
     margin-bottom: 3rem;
   }
@@ -114,23 +118,24 @@
   <span class="m-right">[关 于]</span>
 </a>
 <div id="xnxf-about">
-  <p><img src="https://img.shields.io/badge/-SEO%E6%98%AF%E5%95%A5%E8%81%94%E7%9B%9F-yellowgreen" title="SEO是啥联盟" alt="SEO是啥联盟"> <a target="_blank" title="Feed-FeedsPub" href="https://feeds.pub/feed/https%3A%2F%2Fwww.wdssmq.com%2Ffeed.php"><img src="https://img.shields.io/badge/Feed-FeedsPub-brightgreen" title="Feed-FeedsPub" alt="Feed-FeedsPub"></a> <a target="_blank" title="Feed-Inoreader" href="https://www.innoreader.com/feed/https%3A%2F%2Fwww.wdssmq.com%2Ffeed.php"><img src="https://img.shields.io/badge/Feed-Inoreader-blue" title="Feed-Inoreader" alt="Feed-Inoreader"></a> <a target="_blank" title="Feed-feed.wdssmq.com" href="https://feed.wdssmq.com"><img src="https://img.shields.io/badge/Feed-feed.wdssmq.com-yellow" title="Feed-feed.wdssmq.com" alt="Feed-feed.wdssmq.com"></a> <a target="_blank" title="爱发电-@wdssmq" href="https://afdian.net/@wdssmq"><img src="https://img.shields.io/badge/%E7%88%B1%E5%8F%91%E7%94%B5-%40wdssmq-blueviolet" title="爱发电-@wdssmq" alt="爱发电-@wdssmq"></a> <a target="_blank" title="mastodon-wdssmq" href="https://wxw.moe/@wdssmq"><img src="https://img.shields.io/mastodon/follow/142218?domain=https%3A%2F%2Fwxw.moe%2F" title="mastodon-wdssmq" alt="mastodon-wdssmq"></a> <a target="_blank" title="QQ-349467624" href="https://wpa.qq.com/msgrd?v=3&uin=349467624&site=qq&menu=yes"><img src="https://img.shields.io/badge/QQ-349467624-0086F9" title="QQ-349467624" alt="QQ-349467624"></a></p>
   <!-- -------- -->
   <p>QQ：349467624 <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=349467624&amp;site=qq&amp;menu=yes" title="沉冰浮水的QQ"><img src="https://www.wdssmq.com/zb_users/logos/qq_button.png" alt="QQ" title="QQ"></a></p>
   <p>博客：<a target="_blank" href="https://www.wdssmq.com" title="沉冰浮水">https://www.wdssmq.com</a></p>
   <p class="is-text-bold">Feed：<a target="_blank" href="https://feed.wdssmq.com" title="Feed">https://feed.wdssmq.com</a></p>
   <p>bilibili：<a target="_blank" href="https://space.bilibili.com/44744006" title="bilibili">https://space.bilibili.com/44744006</a></p>
-  <p>知乎：<a target="_blank" href="https://www.zhihu.com/people/wdssmq" title="知乎">https://www.zhihu.com/people/wdssmq</a></p>
   <p>GitHub：<a target="_blank" href="https://github.com/wdssmq" title="GitHub">https://github.com/wdssmq</a></p>
   <p>GreasyFork：<a target="_blank" href="https://greasyfork.org/zh-CN/users/6865-wdssmq" title="GreasyFork">https://greasyfork.org/zh-CN/users/6865-wdssmq</a></p>
+  <p>嘟特（Mastodon ）：<a href="https://wxw.moe/@wdssmq" target="_blank" title="沉冰浮水 (@wdssmq@wxw.moe) - 呜呜 w(> ʌ <)w">https://wxw.moe/@wdssmq</a></p>
+  <p>知乎：<a target="_blank" href="https://www.zhihu.com/people/wdssmq" title="知乎">https://www.zhihu.com/people/wdssmq</a></p>
+  <hr><!-- -------- -->
+  <p>文章推荐：「<a target="_blank" href="https://www.wdssmq.com/post/20201231613.html" title="「言说」RSS 是一种态度！！">RSS 是一种态度</a>」「<a href="https://www.wdssmq.com/post/20200617652.html" target="_blank" title="「水坑」系列教程索引_电脑网络_沉冰浮水">「水坑」系列教程索引_电脑网络_沉冰浮水</a>」</p>
   <hr><!-- -------- -->
   <p>爱发电：<a target="_blank" href="https://afdian.net/@wdssmq" title="爱发电">https://afdian.net/@wdssmq</a></p>
   <p>[AD：<a title="老薛主机" target="_blank" href="https://my.laoxuehost.net/aff.php?aff=294">PHP 美国空间</a> 优惠码：15off-xnxf ]</p>
   <p>[AD：<a title="主机云" target="_blank" href="https://my.hostyun.com/page.aspx?c=referral&u=8680">vps-主机云</a>]</p>
-  <p>[AD：<a title="Vultr" target="_blank" href="https://www.vultr.com/?ref=7663955">vps-Vultr</a>]</p>
+  <p>更多广告：<a title="Vultr" target="_blank" href="https://www.wdssmq.com/category/%E5%B9%BF%E5%91%8A%E6%85%8E%E5%85%A5/">广告慎入 - 沉冰浮水</a></p>
+  <p>更多应用：<a href="https://app.zblogcn.com/?auth=6401c4a7-89cd-48f9-a68b-d6464d8c3bc8" target="_blank" title="沉冰浮水 - Z-Blog 应用中心">沉冰浮水 - Z-Blog 应用中心</a></p>
   <hr><!-- -------- -->
-  <p>一款基于 QueryList V4 的 Z-Blog 采集插件：<a href="https://github.com/wdssmq/kumo-for-zblog" target="_blank" title="wdssmq/kumo-for-zblog: 一款基于QueryList V4的Z-Blog采集插件">https://github.com/wdssmq/kumo-for-zblog</a></p>
-  <p>某理念崩坏的采集插件 - Z-Blog 应用中心：<a href="https://app.zblogcn.com/?id=17788" target="_blank" title="某理念崩坏的采集插件 - Z-Blog 应用中心">https://app.zblogcn.com/?id=17788</a></p>
   <div style="min-height: 37px;"></div>
 </div>
 <div id="xnxf-contrib" class="in">

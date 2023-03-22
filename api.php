@@ -28,7 +28,7 @@ if (!empty($id)) {
 // 取最新10篇文章
 $articles = GetList(10);
 $pagebar = new Pagebar($zbp->option['ZC_INDEX_REGEX'], true, true);
-// 要应用主题模板必须指定pagebar标签，省略了很多属性值，所以结果会是第0页
+// 要应用主题模板必须指定 pagebar 标签，省略了很多属性值，所以结果会是第 0 页
 $zbp->template->SetTags('articles', $articles);
 $zbp->template->SetTags('pagebar', $pagebar);
 $zbp->template->SetTemplate('index');
