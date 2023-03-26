@@ -1,5 +1,5 @@
 (() => {
-  'use strict';
+  "use strict";
   function $n(e) {
     return document.querySelector(e);
   }
@@ -13,12 +13,12 @@
       r1: "",
       r2: "",
       r3: "",
-    }
+    };
     const doOffset = (map, value) => {
       map.r1 = map.r2;
       map.r2 = map.r3;
       map.r3 = value;
-    }
+    };
     const checkActive = (el, oFlag) => {
       if (el.classList.contains("active")) {
         oFlag.activeIsMe = true;
@@ -27,7 +27,7 @@
         return true;
       }
       return false;
-    }
+    };
     const checkH3 = (el, oFlag) => {
       let text = el.querySelector("p,a").textContent;
       // get id in location.hash
@@ -46,7 +46,7 @@
         return true;
       }
       return false;
-    }
+    };
     const parseList = ($elList, mapKeyNum = 1) => {
       for (let i = 0; i < $elList.length; i++) {
         const $elCur = $elList[i];
@@ -54,7 +54,7 @@
         const oFlag = {
           activeIsMe: false,
           h3IsMe: false,
-        }
+        };
         if (checkActive($elCur, oFlag)) {
           let $elPick = $elCur;
           if (checkH3($elCur, oFlag) && oFlag.activeIsMe) {
@@ -72,7 +72,7 @@
           break;
         }
       }
-    }
+    };
 
     // 一级分类列表
     const $r1List = $na(".sidebar-nav>ul>li");
@@ -86,7 +86,7 @@
 
   function updateTitle() {
     const oNewTitle = getTitleDef();
-    if (oNewTitle.strTitle !== ' - ') {
+    if (oNewTitle.strTitle !== " - ") {
       document.title = oNewTitle.strTitle;
     }
   }
@@ -105,6 +105,6 @@
   // Docsify plugin
   window.$docsify.plugins = [].concat(
     Anchor2Title,
-    window.$docsify.plugins
+    window.$docsify.plugins,
   );
 })();
