@@ -3,5 +3,7 @@
         "EditorConfig.EditorConfig",
         "yzhang.markdown-all-in-one",
         "wdssmq.mdlint",
+        // 其实以 JSON 标准最后一项是不能用逗号的，VSCode 特殊处理了；
+        // 注释语法也是，标准 JSON 并不支持注释；
     ]
 }
