@@ -13,9 +13,9 @@
 
 本文档是静态的，也没有用户系统，所以你需要「复制」一份源文件然后修改，而这也是需要掌握的技能之一 —— `Git`；
 
-GitHub: [https://github.com/wdssmq/HelloZBlog](https://github.com/wdssmq/HelloZBlog "wdssmq/HelloZBlog: Z-BlogPHP 插件开发演示")「推荐」
+GitHub: [https://github.com/wdssmq/HelloZBlog](https://github.com/wdssmq/HelloZBlog "wdssmq/HelloZBlog: Z-BlogPHP 插件开发演示")「[部署查看](https://wdssmq.github.io/HelloZBlog/#/ "GitHub Pages")」「推荐」
 
-Gitee: [https://gitee.com/wdssmq/HelloZBlog](https://gitee.com/wdssmq/HelloZBlog "HelloZBlog: Z-BlogPHP 插件开发演示（同步）")
+Gitee: [https://gitee.com/wdssmq/HelloZBlog](https://gitee.com/wdssmq/HelloZBlog "HelloZBlog: Z-BlogPHP 插件开发演示（同步）")「[部署查看](https://wdssmq.gitee.io/hellozblog/#/ "Gitee Pages")」
 
 Gitea: [https://git.mizuno2023.xyz/wdssmq/HelloZBlog](https://git.mizuno2023.xyz/wdssmq/HelloZBlog "wdssmq/HelloZBlog: Z-BlogPHP 插件开发演示（同步）")「自建」
 
