@@ -24,5 +24,5 @@ Gitea: [https://git.mizuno2023.xyz/wdssmq/HelloZBlog](https://git.mizuno2023.xyz
 - [x] 阅读序章；
 - [ ] 注册 Git 平台账号；
 - [ ] Fork 文档项目；
-- [ ] 了解 Markdown 语法中的`任务列表（Task List）`；
+- [ ] 了解 Markdown 语法中的`任务列表(Task List)`；
 - [ ] 使用`在线编辑`标记「序章」中的各项为完成并提交修改；
