@@ -20,7 +20,7 @@
 5. [ ] 生成 SSH 密钥，添加公钥至 Git 平台；「参考：[ssh-keygen](https://www.wdssmq.com/post/20201216004.html "ssh-keygen")」
 6. [ ] 克隆仓库至本地；
 7. [ ] 打开 `HelloZBlog.code-workspace` 工作区；
-8. [ ] 安装推荐的插件；「参考：[VSCode 推荐插件](book-tips/2022-07?id=vscode-设置推荐插件 "VSCode 推荐插件")」
+8. [ ] 安装**工作区内推荐的插件**；「参考：更多[VSCode 推荐插件](book-tips/2022-07?id=vscode-设置推荐插件 "VSCode 推荐插件")」
 9. [ ] 标记以上任务为完成并提交修改；
 
 
