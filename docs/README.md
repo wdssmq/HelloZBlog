@@ -199,11 +199,23 @@ https://marketplace.visualstudio.com/items?itemName=MS-CEINTL.vscode-language-pa
 
 ### 推荐插件
 
-[【列表】VSCode 插件推荐_电脑网络_沉冰浮水](https://www.wdssmq.com/post/20201120794.html "【列表】VSCode插件推荐_电脑网络_沉冰浮水")
+对于 Z-BlogPHP 插件开发，以下为最优先推荐的 VSCode 扩展：
+
+- [PHP Intelephense](https://marketplace.visualstudio.com/items?itemName=bmewburn.vscode-intelephense-client "PHP Intelephense - Visual Studio Marketplace")
+- [PHP DocBlocker](https://marketplace.visualstudio.com/items?itemName=neilbrayfield.php-docblocker "PHP DocBlocker - Visual Studio Marketplace")
+- [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker "Code Spell Checker - Visual Studio Marketplace")
+- [EditorConfig for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig "EditorConfig for VS Code - Visual Studio Marketplace")
+
+> 更多推荐见：
+>
+> 「列表」VSCode 插件推荐\_电脑网络\_沉冰浮水
+>
+> [https://www.wdssmq.com/post/20201120794.html](https://www.wdssmq.com/post/20201120794.html "「列表」VSCode 插件推荐\_电脑网络\_沉冰浮水")
+
 
 ### 快捷键
 
-[【VSCode】快捷键备忘_电脑网络_沉冰浮水](https://www.wdssmq.com/post/20130525410.html "【VSCode】快捷键备忘_电脑网络_沉冰浮水")
+可以在「[咸鱼清单](book-GesF/Level-1?id=part-i "咸鱼清单")」部分看到一些常用的快捷键介绍；
 
 ### 代码片段
 
