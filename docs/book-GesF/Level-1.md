@@ -1,5 +1,6 @@
 <!-- 创建日期：2023-10-23 -->
 
+## Part I
 
 1. [ ] 下载并安装 [VSCode](https://code.visualstudio.com/ "VSCode")；
 2. [ ] 几个相对常用的快捷键；
@@ -32,3 +33,22 @@
 - SSH 教程：[https://wangdoc.com/ssh/](https://wangdoc.com/ssh/ "SSH 教程 - 网道")
 - editorconfig - 搜索：[https://cn.bing.com/search?q=editorconfig](https://cn.bing.com/search?q=editorconfig "editorconfig - 搜索")
 - 「VSCode」快捷键备忘：[https://www.wdssmq.com/post/20130525410.html](https://www.wdssmq.com/post/20130525410.html "「VSCode」快捷键备忘\_电脑网络\_沉冰浮水")
+
+## Part II
+
+1. [ ] 安装 Node.js；「[Node.js](https://nodejs.org/en "Node.js")」
+2. [ ] 安装 pnpm；「[pnpm](https://pnpm.io/zh "pnpm")」
+3. [ ] 安装 docsify-cli；「[docsify-cli](https://docsify.js.org/#/zh-cn/quickstart "docsify-cli")」
+4. [ ] 终端命令中启动预览服务；
+5. [ ] 浏览器中查看预览效果；
+
+```bash
+npm install -g pnpm
+pnpm i docsify-cli -g
+# 需要在 /xxxx/HelloZBlog 目录下执行
+docsify serve docs
+
+# Serving D:\path\HelloZBlog\docs now.
+# Listening at http://localhost:3000
+
+```
