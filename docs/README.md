@@ -1,23 +1,7 @@
 ## 相关推荐
 
-> 教程贴索引[电梯]-Z-BlogPHP-ZBlogger 技术交流中心
-> https://bbs.zblogcn.com/thread-94927.html
->
-> 初学者 Teaching 计划-开发者中心-ZBlogger 技术交流中心
-> https://bbs.zblogcn.com/thread-102975.html
->
-> 【开发者】大概算是进阶建议贴-开发者中心-ZBlogger 技术交流中心
-> https://bbs.zblogcn.com/thread-101310.html
->
-> 开发者准入规范讨论贴-论坛事务-ZBlogger 技术交流中心
-> https://bbs.zblogcn.com/thread-103787.html
->
-> ---------
->
 > 为什么当代社会中有很多人认为视频阅读替代文字阅读是一件可怕的事？：
 > [https://www.zhihu.com/question/357332826/answer/1845022977](https://www.zhihu.com/question/357332826/answer/1845022977 "为什么当代社会中有很多人认为视频阅读替代文字阅读是一件可怕的事？ - 知乎")
->
-> ---------
 >
 > Z-BlogPHP 官方文档：
 >[https://docs.zblogcn.com/php/#/](https://docs.zblogcn.com/php/#/ "Z-BlogPHP 官方文档")
@@ -48,7 +32,7 @@
   - 给「符合/不符合」条件的人发顶帽子……
 
 > 新写的接口机制讲解：
-> 
+>
 > 「水坑」Z-BlogPHP 接口本质之「PHP 可变函数」\_电脑网络\_沉冰浮水
 >
 > [https://www.wdssmq.com/post/20220409155.html](https://www.wdssmq.com/post/20220409155.html "「水坑」Z-BlogPHP 接口本质之「PHP 可变函数」\_电脑网络\_沉冰浮水")
