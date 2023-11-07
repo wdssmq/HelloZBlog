@@ -6,9 +6,9 @@
 **注：实际并不局限于 Z-BlogPHP 体系，下边「技能图谱」算是大的分支方向选择；**
 
 
-> 「水坑」并没有图的技能树图谱\_电脑网络\_沉冰浮水
+> 「水坑」并没有图的技能树图谱 · Issue #1 · wdssmq/HelloZBlog
 >
-> [https://www.wdssmq.com/post/20230914731.html](https://www.wdssmq.com/post/20230914731.html "「水坑」并没有图的技能树图谱\_电脑网络\_沉冰浮水")
+> [https://github.com/wdssmq/HelloZBlog/issues/1](https://github.com/wdssmq/HelloZBlog/issues/1 "「水坑」并没有图的技能树图谱 · Issue #1 · wdssmq/HelloZBlog")
 
 
 本文档是静态的，也没有用户系统，所以你需要「复制」一份源文件然后修改，而这也是需要掌握的技能之一 —— `Git`；
