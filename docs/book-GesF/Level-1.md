@@ -31,6 +31,8 @@
 **扩展阅读：**
 
 - SSH 教程：[https://wangdoc.com/ssh/](https://wangdoc.com/ssh/ "SSH 教程 - 网道")
+- 阮一峰：RSA 算法原理（一）：[https://ruanyifeng.com/blog/2013/06/rsa_algorithm_part_one.html](https://ruanyifeng.com/blog/2013/06/rsa_algorithm_part_one.html "RSA 算法原理（一） - 阮一峰的网络日志")
+- 阮一峰：RSA 算法原理（二）：[https://ruanyifeng.com/blog/2013/07/rsa_algorithm_part_two.html](https://ruanyifeng.com/blog/2013/07/rsa_algorithm_part_two.html "RSA 算法原理（二） - 阮一峰的网络日志")
 - editorconfig - 搜索：[https://cn.bing.com/search?q=editorconfig](https://cn.bing.com/search?q=editorconfig "editorconfig - 搜索")
 - 「VSCode」快捷键备忘：[https://www.wdssmq.com/post/20130525410.html](https://www.wdssmq.com/post/20130525410.html "「VSCode」快捷键备忘\_电脑网络\_沉冰浮水")
 
