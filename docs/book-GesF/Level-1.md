@@ -8,6 +8,7 @@
    - [ ] `Ctrl + \`：查看: 拆分编辑器；←「我自己总是记成 `|`」
    - [ ] `Ctrl + ~`：打开终端；←「这里其实是指反引号，Esc 下边那个键，和 `Ctrl + J` 有点区别」
    - [ ] `Ctrl + B`：查看: 切换主侧栏可见性；
+   - [ ] `Ctrl + G`：转到行/列 ...
    - [ ] `Ctrl + N`：文件: 新的无标题文本文件；
    - [ ] `Ctrl + O`：文件: 打开文件...；
    - [ ] `Ctrl + P`：转到文件...—— 切换正在编辑或者**文件夹/工作区**中的文件；
@@ -15,7 +16,7 @@
    - [ ] `Ctrl + Shift + E`：查看: 显示 资源管理器；
    - [ ] `Ctrl + Shift + G`：查看: 显示 源代码管理；
    - [ ] `Ctrl + Shift + N`：新建窗口；
-   - [ ] `Ctrl + Shift + P`：显示所有命令；
+   - [ ] `Ctrl + Shift + P`：命令面板；
    - [ ] `Ctrl + Shift + X`：查看: 显示 扩展；
 3. [ ] 下载并安装 [Git](https://git-scm.com/ "Git")；「参考：[安装指引](https://www.wdssmq.com/post/20140804123.html "安装指引")」
 4. [ ] 设置 VSCode 的默认终端为 Git Bash；「参考：[Git Bash](https://www.wdssmq.com/post/20120915760.html "Git Bash")」
