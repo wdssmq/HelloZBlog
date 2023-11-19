@@ -18,6 +18,9 @@
    - [ ] `Ctrl + K Ctrl + S`：首选项: 打开键盘快捷方式 —— 要分两次按；
    - [ ] `Ctrl + L`：选中当前行；
    - [ ] 按住 `Alt` 后操作鼠标，可以插入多个光标或者选中多处文本内容，然后同时编辑；
+   - [ ] `Ctrl + Shift + B`：
+       - 如果工作区路径正确，并且正确安装了 docsify-cli，将自动执行 `docsify serve docs`；
+       - 需要根据实际项目配置 `.vscode/tasks.json` 文件；
 
 注：
 
